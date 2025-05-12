@@ -1,4 +1,4 @@
-#include "IObject.hpp"
+// src/Objects/sphereObj.cpp
 #include "include/SphereObj.hpp"
 
 Sphere::Sphere(IMaterial &material, const Vector3 &center, const Vector3 &color, double radius)
