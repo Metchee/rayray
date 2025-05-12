@@ -1,23 +1,15 @@
-// include/Scene.hpp
 #pragma once
 #include <iostream>
-#include <memory>
-#include <vector>
-#include <string>
 #include "IObject.hpp"
-#include "SceneConfig.hpp"
+#include <libconfig.h++>
 
 class Scene {
-public:
-    Scene(const std::string& configFile);
-    void render();
-
-private:
-    void setupCamera();
-    void createObjects();
-    void setupLights();
-
-    SceneConfig config;
-    std::vector<std::unique_ptr<IObject>> objects;
-    std::vector<std::unique_ptr<IMaterial>> materials; // Pour stocker les matériaux
+    public:
+        Scene(int ac, const char *av[]) {
+            // TODO: Implement parsing of the config file
+        }
+        void addObject(std::unique_ptr<IObject> obj);
+        std::unique_ptr<IObject> createObject(const std::string &type);
+    private:
+        std::vector<std::unique_ptr<IObject>> objects_;
 };
