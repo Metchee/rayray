@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/gabinrudigoz/raytracer/rayray/include -I/home/gabinrudigoz/raytracer/rayray/src/Objects/include -I/home/gabinrudigoz/raytracer/rayray/src/Objects/../Materials/include -I/home/gabinrudigoz/raytracer/rayray/src/Objects/../../include
+CXX_INCLUDES = -I/home/gabinrudigoz/raytracer/rayray/include -I/home/gabinrudigoz/raytracer/rayray/src/Objects/include -I/home/gabinrudigoz/raytracer/rayray/src/Materials/include -I/home/gabinrudigoz/raytracer/rayray/include/lights -I/home/gabinrudigoz/raytracer/rayray/src/Objects/../Materials/include -I/home/gabinrudigoz/raytracer/rayray/src/Objects/../../include
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17
 
